@@ -4,7 +4,7 @@ import '../jobSizzler/jobSizzler.css'
 const JobSizzler = () => {
     const [jobDetails, setJobDetails] = useState({
         jobRole: '',
-        keywords:''
+        keywords: ''
     })
     const [generatedDescription, setGeneratedDescription] = useState('');
     const [isGenerating, setIsGenerating] = useState(false);
