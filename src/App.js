@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import JobDescription from './components/jobDescription/JobDescription'
+import JobSizzler from './components/jobSizzler/JobSizzler.js'
+import LinkedPost from './components/linkedpost/LinkedPost.js'
+import Navbar from './components/Navbar'
+import Features from './components/Features'
+import Services from './components/Services'
+import Contact from './components/Contact'
 
-function App() {
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/jobdescription' element={<JobDescription />} />
+        <Route path='/jobsizzler' element={<JobSizzler />} />
+        <Route path='/linkedpost' element={<LinkedPost />} />
+        <Route path='/features' element={<Features/>} />
+        <Route path='/services' element={<Services/>} />
+        <Route path='/contact' element={<Contact/>}/>
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App

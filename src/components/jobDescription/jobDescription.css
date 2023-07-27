@@ -1,0 +1,50 @@
+/*job description*/
+#job-desc{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  
+  }
+  #ai{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  input,select{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 20px;
+    margin: 2px;
+    border:2px solid #5B42F3;
+    border-radius: 5px;
+  }
+  input::placeholder{
+    font-weight: bold;
+  }
+  .btn{
+    margin: 20px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    color:#ffff;
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .generated-content{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  textarea{
+    padding: 20px 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:2px solid #5B42F3;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+  }

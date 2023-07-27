@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kumbh+Sans:wght@700&family=Lora:ital,wght@0,400;0,600;0,700;1,600&family=News+Cycle:wght@700&family=Noticia+Text:ital,wght@1,700&family=Nunito+Sans:wght@300;400&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,700&family=Playfair+Display:wght@500;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rampart+One&family=Roboto+Mono:wght@400;500;600;700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;700&family=Sora:wght@500;600&family=Teko:wght@600&family=Urbanist:ital,wght@1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.navbar {
+  font-weight: bold;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 10px;
+}
+.navbar-brand .logo{
+  font-weight: bold;
+  background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 4px solid #8e54e9;
 }
 
-.App-link {
-  color: #61dafb;
+#Banner {
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+  color: #ffff;
+  height: 100vh;
+  font-weight: bolder;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.banner{
+  margin-top: 5%;
+}
+
+.banner-btn {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px;
+  background-color: transparent;
+  border:4px solid #8EC5FC;
+  color: #ffff;
+  padding: 20px 10px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px 10px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 500px;
+
+
+}
+.banner-btn:hover {
+  color:#6E07F3;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#banner-img {
+  animation: float 3s ease-in-out forwards infinite;
+}
+#features h5{
+  color: #6E07F3;
+}
+#features p{
+  font-weight: bold;
+  text-align: left;
+}
+#services{
+  color:#fff;
+  padding-top: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.card {
+  margin: 10px;
+  padding: 20px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #8e54e9;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.card:hover {
+  background-color: #6E07F3;
+  color: #ffff;
+  transform: translateY(10px);
+  box-shadow: rgba(88, 9, 177, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    transform: translateY(10px);
   }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+.contact-form textarea{
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 400px;
+}
+.contact-form{
+  margin-top: 10%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contact-form .btn{
+  width: 100%;
+  max-width: 400px;
 }
