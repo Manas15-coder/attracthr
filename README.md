@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# Attract HR: AI Job Description Generator 
 
+<img src='https://i.postimg.cc/CLhJPJhh/Screenshot-2024-04-29-220417.png'/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
